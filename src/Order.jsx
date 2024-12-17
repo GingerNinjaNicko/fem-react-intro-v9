@@ -55,7 +55,7 @@ export default function Order() {
             <div>
               <span>
                 <input
-                  onClick={(e) => setPizzaSize(e.target.value)}
+                  onChange={(e) => setPizzaSize(e.target.value)}
                   checked={pizzaSize === "S"}
                   type="radio"
                   name="pizza-size"
@@ -66,7 +66,7 @@ export default function Order() {
               </span>
               <span>
                 <input
-                  onClick={(e) => setPizzaSize(e.target.value)}
+                  onChange={(e) => setPizzaSize(e.target.value)}
                   checked={pizzaSize === "M"}
                   type="radio"
                   name="pizza-size"
@@ -77,7 +77,7 @@ export default function Order() {
               </span>
               <span>
                 <input
-                  onClick={(e) => setPizzaSize(e.target.value)}
+                  onChange={(e) => setPizzaSize(e.target.value)}
                   checked={pizzaSize === "L"}
                   type="radio"
                   name="pizza-size"
