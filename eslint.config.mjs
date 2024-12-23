@@ -5,6 +5,9 @@ import reactPlugin from "eslint-plugin-react";
 
 /** @type {import('eslint').Linter.Config()} */
 export default [
+  {
+    ignores: ["course-reference/", "api"],
+  },
   js.configs.recommended,
   {
     ...reactPlugin.configs.flat.recommended,
