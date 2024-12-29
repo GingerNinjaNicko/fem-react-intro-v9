@@ -58,8 +58,7 @@ function Order() {
       <div className="order">
         <h2>Create order</h2>
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
+          action={() => {
             setCart([
               ...cart,
               { pizza: selectedPizza, size: pizzaSize, price },
