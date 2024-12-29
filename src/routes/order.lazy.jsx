@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect, use } from "react";
 import { createLazyFileRoute } from "@tanstack/react-router";
 import Pizza from "../Pizza";
 import Cart from "../cart";
@@ -16,7 +16,7 @@ function Order() {
   const [pizzaTypes, setPizzaTypes] = useState([]);
   const [pizzaType, setPizzaType] = useState("pepperoni");
   const [pizzaSize, setPizzaSize] = useState("M");
-  const [cart, setCart] = useContext(CartContext);
+  const [cart, setCart] = use(CartContext);
   const [loading, setLoading] = useState(true);
 
   async function checkout() {
